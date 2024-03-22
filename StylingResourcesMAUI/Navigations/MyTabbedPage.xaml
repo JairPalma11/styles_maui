@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:NavigationPatternsMAUI.Pages"
+            x:Class="NavigationPatternsMAUI.Navigations.MyTabbedPage">
+            
+    <!-- Agrega estas lineas al TabbedPage
+    para posicionar los tabs en la parte de abajo en android
+    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    -->
+    <pages:ContactPage
+        Title="Mi Contacto"
+        IconImageSource="call_icon" />
+
+
+    <NavigationPage
+        Title="Mi Perfil"
+        IconImageSource="person_icon">
+        <x:Arguments>
+            <pages:ProfilePage />
+        </x:Arguments>
+    </NavigationPage>
+
+    
+
+    <pages:AboutPage
+        IconImageSource="info_icon"/>
+
+</TabbedPage>
