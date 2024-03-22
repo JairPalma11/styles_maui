@@ -22,7 +22,6 @@ public partial class DemoStaticResourcePage : ContentPage
 		{
 			//si existe el recurso cambiamos el color a otro
 			this.Resources[key] = Colors.DarkCyan;
-
         }
     }
 }

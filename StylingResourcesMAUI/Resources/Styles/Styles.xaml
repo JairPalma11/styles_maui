@@ -4,6 +4,56 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!-- Aplicacion de los themas en cada estilo
+    de forma implicita
+    -->
+
+    <!-- ApplyToDerivedTypes permite aplicar a las subclases el mismo estilo -->
+    <Style TargetType="Page"
+           ApplyToDerivedTypes="true">
+
+        <Setter
+            Property="BackgroundColor"
+            Value="{DynamicResource BackgroundPageColor}" />
+
+    </Style>
+
+    <Style TargetType="TabbedPage">
+
+        <Setter Property="BarBackgroundColor" Value="#795548" />
+        <Setter Property="SelectedTabColor" Value="#00838F" />
+
+    </Style>
+
+    <Style TargetType="NavigationPage">
+
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource Primary}" />
+
+    </Style>
+
+
+    <Style TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="MinimumHeightRequest" Value="44"/>
+        <Setter Property="PlaceholderColor" Value="{DynamicResource Accent}" />
+        <Setter Property="FontSize" Value="Medium" />
+
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="MinimumHeightRequest" Value="44"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource Primary}" />
+    </Style>
+
+    <!-- estilos explicitos-->
+    <Style x:Key="ButtonStyle2" TargetType="Button">
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="TextColor" Value="{DynamicResource Primary}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+    </Style>
 
 </ResourceDictionary>
 

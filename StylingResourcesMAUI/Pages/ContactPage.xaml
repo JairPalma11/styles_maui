@@ -12,6 +12,8 @@
         <Entry Placeholder="Nombre completo" />
         <Entry Placeholder="Numero de telefono" />
         <Entry Placeholder="Email" />
-        <Button Text="Guardar" />
+        <Button
+            Style="{StaticResource ButtonStyle2}"
+            Text="Guardar" />
     </VerticalStackLayout>
 </ContentPage>

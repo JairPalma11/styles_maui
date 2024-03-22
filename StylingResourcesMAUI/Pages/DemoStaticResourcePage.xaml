@@ -32,7 +32,10 @@
             Text="Este label tiene su propio color definido en su propio diccionario">
 
             <Label.Resources>
-
+                <!--
+                al ser un estilo aplicado despues de crearo
+                el label necesitamos que sea dinamico
+                -->
                 <Color
                     x:Key="MyColor">Orange</Color>
 

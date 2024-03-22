@@ -9,7 +9,12 @@ public partial class App : Application
 	{
 		InitializeComponent();
 		//para probar recursos dinamicos y estaticos
-		MainPage = new DemoStaticResourcePage();
-	}
+		//descomenta aqui
+		//MainPage = new DemoStaticResourcePage();
+
+		//para ver estilos y temas
+		//descomenta aqui
+		MainPage = new MyTabbedPage();
+    }
 }
 
