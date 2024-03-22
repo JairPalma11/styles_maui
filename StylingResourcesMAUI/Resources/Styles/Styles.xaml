@@ -3,7 +3,6 @@
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
     <!-- Aplicacion de los themas en cada estilo
     de forma implicita
     -->
@@ -19,40 +18,44 @@
     </Style>
 
     <Style TargetType="TabbedPage">
-
-        <Setter Property="BarBackgroundColor" Value="#795548" />
-        <Setter Property="SelectedTabColor" Value="#00838F" />
-
+        <Setter Property="BarTextColor" Value="White" />
+        <Setter Property="BarBackground" Value="{DynamicResource PrimaryBrush}" />
+        <Setter Property="SelectedTabColor" Value="{DynamicResource Secondary}" />
     </Style>
 
     <Style TargetType="NavigationPage">
-
+        <Setter Property="BarTextColor" Value="{DynamicResource PrimaryTextColor}" />
         <Setter Property="BarBackgroundColor" Value="{DynamicResource Primary}" />
 
     </Style>
 
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
 
     <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="BackgroundColor" Value="Transparent"/>
         <Setter Property="MinimumHeightRequest" Value="44"/>
         <Setter Property="PlaceholderColor" Value="{DynamicResource Accent}" />
         <Setter Property="FontSize" Value="Medium" />
-
     </Style>
 
     <Style TargetType="Button">
         <Setter Property="FontSize" Value="Medium" />
-        <Setter Property="TextColor" Value="White" />
+        <Setter Property="TextColor" Value="{DynamicResource AccentTextColor}" />
         <Setter Property="CornerRadius" Value="20" />
         <Setter Property="MinimumHeightRequest" Value="44"/>
-        <Setter Property="BackgroundColor" Value="{DynamicResource Primary}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource Accent}" />
     </Style>
 
-    <!-- estilos explicitos-->
+    <!-- Estilos explicitos por que definen un x:Key -->
     <Style x:Key="ButtonStyle2" TargetType="Button">
         <Setter Property="FontSize" Value="Large" />
-        <Setter Property="TextColor" Value="{DynamicResource Primary}" />
-        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="{DynamicResource SecondaryTextColor}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource Secondary}" />
     </Style>
 
 </ResourceDictionary>

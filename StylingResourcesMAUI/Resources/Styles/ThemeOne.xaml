@@ -8,5 +8,16 @@
     <Color x:Key="Primary">#A0153E</Color>
     <Color x:Key="Secondary">#5D0E41</Color>
     <Color x:Key="Accent">#FF204E</Color>
+
+    <Color x:Key="BackgroundPageColor">#FAFAFA</Color>
+
+    <!-- Colores para los textos -->
+    <Color x:Key="TextColor">Black</Color>
+    <Color x:Key="PrimaryTextColor">White</Color>
+    <Color x:Key="SecondaryTextColor">White</Color>
+    <Color x:Key="AccentTextColor">White</Color>
+    
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+
 </ResourceDictionary>
 
