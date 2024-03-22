@@ -22,6 +22,10 @@
             <Button
                 Clicked="Button_Clicked"
                 Text="Actualizar datos" />
+
+            <Button
+                Style="{StaticResource ButtonStyle3}"
+                Text="Borrar Cuenta" />
         </VerticalStackLayout>
 
     </ScrollView>

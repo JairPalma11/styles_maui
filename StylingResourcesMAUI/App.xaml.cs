@@ -19,15 +19,17 @@ public partial class App : Application
         //nos suscribimos para detectar cambios
         //en el tema actual
         //descomentar para probar
-        RequestedThemeChanged += OnAppThemeChanged;
+        //RequestedThemeChanged += OnAppThemeChanged;
     }
 
     protected override void OnStart()
     {
         base.OnStart();
         //verificamos en que modo estamos para cargar el
-        //thema correcto
-        CheckAndChangeAppTheme(this.RequestedTheme);
+        //tema correcto
+        //descomentar para verificar el tema al iniciar
+        //la app
+        //CheckAndChangeAppTheme(this.RequestedTheme);
     }
 
     private void CheckAndChangeAppTheme(AppTheme appTheme)
