@@ -2,17 +2,17 @@
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:pages="clr-namespace:NavigationPatternsMAUI.Pages"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="NavigationPatternsMAUI.Navigations.MyTabbedPage">
-            
-    <!-- Agrega estas lineas al TabbedPage
-    para posicionar los tabs en la parte de abajo en android
-    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
-    android:TabbedPage.ToolbarPlacement="Bottom"
-    -->
-    <pages:ContactPage
-        Title="Mi Contacto"
-        IconImageSource="call_icon" />
 
+    <NavigationPage
+        Title="Mi Contacto"
+        IconImageSource="call_icon">
+        <x:Arguments>
+            <pages:ContactPage />
+        </x:Arguments>
+    </NavigationPage>
 
     <NavigationPage
         Title="Mi Perfil"
@@ -22,9 +22,12 @@
         </x:Arguments>
     </NavigationPage>
 
-    
-
-    <pages:AboutPage
-        IconImageSource="info_icon"/>
+    <NavigationPage
+        Title="Acerca"
+        IconImageSource="info_icon">
+        <x:Arguments>
+           <pages:AboutPage/>
+        </x:Arguments>
+    </NavigationPage>
 
 </TabbedPage>
