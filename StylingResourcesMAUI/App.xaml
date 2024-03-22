@@ -10,6 +10,10 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+
+        <!--Definicion de recursos accesibles en toda la app -->
+        <x:String x:Key="MyTitlePage">Titulo Global</x:String>
+        <x:Double x:Key="DefaultFontSize">30</x:Double>
     </Application.Resources>
 </Application>
 

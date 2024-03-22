@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StylingResourcesMAUI.Pages.DemoStaticResourcePage"
+             Padding="20"
+             Title="DemoStaticResourcePage">
+    <ContentPage.Resources>
+
+        <Color
+            x:Key="FavoriteColor">Red</Color>
+
+    </ContentPage.Resources>
+    <VerticalStackLayout
+        BackgroundColor="{DynamicResource MyBackgroundColor}"
+        Spacing="12">
+        <Label
+            FontSize="Large"
+            Text="Este es un string que viene desde ResourceDictionary de la App"/>
+        <Label
+            FontSize="Medium"
+            FontAttributes="Italic"
+            Text="{StaticResource MyTitlePage}" />
+        <Label
+            FontSize="{StaticResource DefaultFontSize}"
+            Text="El tamano de letra de este Label utiliza un recurso a nivel App."/>
+        <Label
+            TextColor="{StaticResource FavoriteColor}"
+            Text="Este Label usa un color favorito defindo en esta Pagina" />
+
+        <Label
+            TextColor="{DynamicResource MyColor}"
+            Text="Este label tiene su propio color definido en su propio diccionario">
+
+            <Label.Resources>
+
+                <Color
+                    x:Key="MyColor">Orange</Color>
+
+            </Label.Resources>
+
+        </Label>
+
+        <Button
+            Clicked="Button_Clicked"
+            Text="Cambiar color" />
+    </VerticalStackLayout>
+</ContentPage>
