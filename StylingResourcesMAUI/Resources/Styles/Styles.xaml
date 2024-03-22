@@ -35,6 +35,7 @@
     </Style>
 
     <Style TargetType="Entry">
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
         <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="BackgroundColor" Value="Transparent"/>
         <Setter Property="MinimumHeightRequest" Value="44"/>
@@ -43,6 +44,7 @@
     </Style>
 
     <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
         <Setter Property="FontSize" Value="Medium" />
         <Setter Property="TextColor" Value="{DynamicResource AccentTextColor}" />
         <Setter Property="CornerRadius" Value="20" />

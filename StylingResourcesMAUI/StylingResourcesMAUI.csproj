@@ -40,6 +40,8 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
+	  <MtouchInterpreter>all</MtouchInterpreter>
+	  <MtouchLink>None</MtouchLink>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -65,22 +67,4 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Remove="Resources\Images\person_icon.svg" />
-	  <None Remove="Resources\Images\grid_image.png" />
-	  <None Remove="Resources\Images\hamburger_icon.svg" />
-	  <None Remove="Resources\Images\info_icon.svg" />
-	  <None Remove="Resources\Images\call_icon.svg" />
-	  <None Remove="Resources\Images\email_icon.svg" />
-	  <None Remove="Resources\Images\background_sample.png" />
-	</ItemGroup>
-	<ItemGroup>
-	  <BundleResource Include="Resources\Images\person_icon.svg" />
-	  <BundleResource Include="Resources\Images\grid_image.png" />
-	  <BundleResource Include="Resources\Images\hamburger_icon.svg" />
-	  <BundleResource Include="Resources\Images\info_icon.svg" />
-	  <BundleResource Include="Resources\Images\call_icon.svg" />
-	  <BundleResource Include="Resources\Images\email_icon.svg" />
-	  <BundleResource Include="Resources\Images\background_sample.png" />
-	</ItemGroup>
 </Project>

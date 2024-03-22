@@ -4,6 +4,8 @@
             xmlns:pages="clr-namespace:NavigationPatternsMAUI.Pages"
             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
             android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="{DynamicResource Secondary}"
+            SelectedTabColor="{DynamicResource SecondaryTextColor}"
             x:Class="NavigationPatternsMAUI.Navigations.MyTabbedPage">
 
     <NavigationPage
