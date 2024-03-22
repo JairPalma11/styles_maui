@@ -1,4 +1,4 @@
-﻿namespace NavigationPatternsMAUI.Pages;
+﻿namespace StylingResourcesMAUI.Pages;
 
 public partial class AboutPage : ContentPage
 {

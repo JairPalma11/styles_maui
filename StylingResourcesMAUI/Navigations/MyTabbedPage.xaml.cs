@@ -1,4 +1,4 @@
-﻿namespace NavigationPatternsMAUI.Navigations;
+﻿namespace StylingResourcesMAUI.Navigations;
 
 public partial class MyTabbedPage : TabbedPage
 {
